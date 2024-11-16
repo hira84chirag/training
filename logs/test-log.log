@@ -1,0 +1,31 @@
+2024-08-26 13:03:38 INFO  TestWithLog4j:25 - Navigated to https://example.com
+2024-08-26 13:03:38 ERROR TestWithLog4j:38 - An error occurred: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: chrome=127.0.6533.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c5751b2b5abeb5ca54303ca320ade60b, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.122, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELLEN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51979}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51979/devtoo..., se:cdpVersion: 127.0.6533.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c5751b2b5abeb5ca54303ca320ade60b
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351) ~[selenium-remote-driver-4.23.0.jar:?]
+	at utili.TestWithLog4j.main(TestWithLog4j.java:28) ~[test-classes/:?]
+2024-08-26 13:03:38 INFO  TestWithLog4j:42 - Browser closed.
+2024-08-26 13:05:16 INFO  TestWithLog4j:25 - Navigated to https://example.com
+2024-08-26 13:05:16 INFO  TestWithLog4j:29 - Username field located.
+2024-08-26 13:05:16 INFO  TestWithLog4j:33 - Entered username 'testuser'.
+2024-08-26 13:05:17 INFO  TestWithLog4j:42 - Browser closed.
