@@ -2,8 +2,7 @@ package newtest;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-
+driver.navigate().forward();
 public class ChiragSimple extends ChiragBase {
 	
 	 @Test

@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+driver.navigate().forward();
 public class ChiragCommon {
 	static WebDriver driver; 
 	public void SetupBrowser(String browser,String url) {
