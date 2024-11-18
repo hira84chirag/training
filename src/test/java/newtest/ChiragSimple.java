@@ -11,6 +11,7 @@ public class ChiragSimple extends ChiragBase {
 	 public void signinAction() {		 
 		 System.out.println(driver.getTitle());
 		 driver.navigate().back();
+		 driver.navigate().forward();
 
 	 	}
 
