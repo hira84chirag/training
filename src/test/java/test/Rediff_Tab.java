@@ -5,12 +5,12 @@ import pom.Pageobj_HomePage;
 import java.time.Duration;
 import org.testng.annotations.Parameters;
 
-public class Homepage extends BaseRediff {
+public class Rediff_Tab extends BaseRediff {
 	Pageobj_HomePage obj;
 
 	@Test
-	@Parameters({ "urlRediff" })
-	public void HomeRediff(String url) {
+	@Parameters({"browser","urlRediff"})
+	public void HomeRediff(String browser,String url) {
 		obj=new Pageobj_HomePage(driver); 
 		driver.manage().window().maximize();
 		//obj.pageLoad();
@@ -19,8 +19,8 @@ public class Homepage extends BaseRediff {
 		obj.clicksporttab();
 		driver.navigate().back();
 		obj.CreateImage("results");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
-
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
+		driver.quit();
 	}
 	
 }

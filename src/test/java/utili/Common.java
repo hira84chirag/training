@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Common {
-	static WebDriver driver; 
+private	static WebDriver driver; 
 	public void SetupBrowser(String browser,String url) {
 	
 		if (browser.equalsIgnoreCase("chrome")) 

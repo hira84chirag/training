@@ -9,8 +9,19 @@
 	<parameter name="urlRediff" value="https://www.rediff.com" />
 
 	<test thread-count="5" name="Test">
-  		<classes>
-		 <class name="test.Homepage"/>
+	
+	<classes>
+		 <class name="test.HomePage_Simple"/>
 		</classes>	
+		
+  		
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
+<!-- 
+	<packages>
+  			<package name="test"></package>
+  		</packages>
+ -->
+		

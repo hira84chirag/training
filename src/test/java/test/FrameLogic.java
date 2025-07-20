@@ -43,6 +43,7 @@ public class FrameLogic extends BaseTest {
 		obj.packageListframeclick();
 		obj.packageframeclick();
 		obj.classframeclick();
+		driver.quit();
 	}
 	@AfterClass
 	public void afterClass() {

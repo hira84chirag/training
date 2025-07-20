@@ -18,7 +18,7 @@ public class BaseRediffSimple {
 	// String browser,String url
 	
 	@BeforeTest
-	@Parameters({"browser","url"})
+	@Parameters({"browser","urlRediff"})
 	public void beforetest(String browser,String url) throws Exception {
 		common =new Common();		
 		common.SetupBrowser(browser,url);

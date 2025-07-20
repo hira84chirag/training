@@ -8,13 +8,13 @@
   <parameter name="urlRediff" value="https://www.rediff.com"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.ChiragSimple">
+      <class name="test.HomePage_Simple">
         <methods>
           <include name="beforetest"/>
-          <include name="signinAction"/>
           <include name="aftertest"/>
+          <include name="signinAction"/>
         </methods>
-      </class> <!-- test.ChiragSimple -->
+      </class> <!-- test.HomePage_Simple -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

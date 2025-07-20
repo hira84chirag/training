@@ -27,10 +27,6 @@ public class Pageobj_HomePage {
 	@FindBy(xpath = "//a[contains(text(),'CRICKET')]")
 	WebElement crickettab;
 	
-	@CacheLookup
-	@FindBy(xpath="//ul[@class='navbarul']//a[text()='HOME']")
-	WebElement hometab;
-	
 	//$x("//ul[@class='navbarul']//a[text()='HOME']")
 	
 	@CacheLookup
@@ -67,14 +63,14 @@ public class Pageobj_HomePage {
 	public void clickHometab() {		
 		  // Define a wait time
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
-        String home="//ul[@class='navbarul']//a[text()='HOME']";
+        String home="//a[text()='HOME']";
         // Try to find the element that should be displayed
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(home)));
 		
-		boolean bolhome = hometab.isDisplayed();
+		boolean bolhome = element.isDisplayed();
         if(bolhome) { 
             pageLoadStop();
-            hometab.click();
+            element.click();
         	Reporter.log("Home tab is visible");
          }        		
 	}

@@ -10,7 +10,7 @@ import utili.Common;
 
 public class BaseRediff {
 	Common common;
-	public static WebDriver  driver;
+	 static WebDriver  driver;
 	
 	@BeforeTest
 	@Parameters({"browser","urlRediff"})

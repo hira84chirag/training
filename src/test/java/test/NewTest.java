@@ -55,7 +55,7 @@ public void method1(String url) {
 	 	String msg=driver.switchTo().alert().getText();
 		Reporter.log(msg);	
 		driver.switchTo().alert().accept();
-			
+		driver.quit();
   }
 //  @Test
   @Parameters({"url"})
