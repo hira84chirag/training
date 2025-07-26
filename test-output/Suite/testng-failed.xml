@@ -8,13 +8,127 @@
   <parameter name="urlRediff" value="https://www.rediff.com"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="test.Rediff_Tab">
+        <methods>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="HomeRediff"/>
+        </methods>
+      </class> <!-- test.Rediff_Tab -->
+      <class name="test.AccessUrl2">
+        <methods>
+          <include name="enterpass"/>
+          <include name="siteTitle"/>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="enteremail"/>
+        </methods>
+      </class> <!-- test.AccessUrl2 -->
+      <class name="test.AccessUrl">
+        <methods>
+          <include name="enteremail"/>
+          <include name="beforetest"/>
+          <include name="siteTitle"/>
+          <include name="aftertest"/>
+          <include name="enterpass"/>
+        </methods>
+      </class> <!-- test.AccessUrl -->
+      <class name="test.FrameLogic">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="beforetest"/>
+          <include name="afterMethod"/>
+          <include name="aftertest"/>
+          <include name="method"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- test.FrameLogic -->
+      <class name="test.AccessUrl3">
+        <methods>
+          <include name="siteTitle"/>
+          <include name="enterpass"/>
+          <include name="enteremail"/>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- test.AccessUrl3 -->
+      <class name="test.RediffSignin">
+        <methods>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="HomeRediff"/>
+        </methods>
+      </class> <!-- test.RediffSignin -->
+      <class name="test.BaseRediffSimple">
+        <methods>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- test.BaseRediffSimple -->
+      <class name="test.NewTest">
+        <methods>
+          <include name="method1"/>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforetest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- test.NewTest -->
+      <class name="test.CreateAccount">
+        <methods>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="CrtAccount"/>
+        </methods>
+      </class> <!-- test.CreateAccount -->
+      <class name="test.Facebook_Link">
+        <methods>
+          <include name="pagelink"/>
+          <include name="beforetest"/>
+          <include name="siteTitle"/>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- test.Facebook_Link -->
+      <class name="test.Facebook_count">
+        <methods>
+          <include name="pagelink"/>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="siteTitle"/>
+        </methods>
+      </class> <!-- test.Facebook_count -->
       <class name="test.HomePage_Simple">
         <methods>
+          <include name="homepageAction"/>
           <include name="beforetest"/>
           <include name="aftertest"/>
           <include name="signinAction"/>
         </methods>
       </class> <!-- test.HomePage_Simple -->
+      <class name="test.BaseRediff">
+        <methods>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- test.BaseRediff -->
+      <class name="test.Facebook_Test">
+        <methods>
+          <include name="siteTitle"/>
+          <include name="beforetest"/>
+          <include name="pagelink"/>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- test.Facebook_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
